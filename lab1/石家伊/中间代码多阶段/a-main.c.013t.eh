@@ -1,0 +1,61 @@
+
+;; Function main (main, funcdef_no=0, decl_uid=2473, cgraph_uid=1, symbol_order=3)
+
+int main ()
+{
+  int c;
+  int n;
+  int t;
+  int i;
+  int b;
+  int a;
+  int D.2487;
+
+  _1 = clock ();
+  start = _1;
+  __builtin_puts ("\xe8\xbf\x99\xe6\x98\xaf\xe4\xb8\x80\xe4\xb8\xaa\xe5\xae\x8f\xe5\xae\x9a\xe4\xb9\x89\xef\xbd\x9e");
+  a = 0;
+  b = 1;
+  i = 1;
+  c = 2000;
+  scanf ("%d", &n);
+  printf ("%d\n", a);
+  printf ("%d\n", b);
+  goto <D.2482>;
+  <D.2483>:
+  t = b;
+  b = a + b;
+  printf ("%d\n", b);
+  a = t;
+  i = i + 1;
+  <D.2482>:
+  n.0_2 = n;
+  if (i < n.0_2) goto <D.2483>; else goto <D.2481>;
+  <D.2481>:
+  if (0 != 0) goto <D.2485>; else goto <D.2486>;
+  <D.2485>:
+  __builtin_puts ("\xe8\xbf\x99\xe4\xb8\x8d\xe5\xaf\xb9\xe5\x90\xa7\xef\xbc\x9f");
+  <D.2486>:
+  _3 = clock ();
+  stop = _3;
+  stop.1_4 = stop;
+  start.2_5 = start;
+  _6 = stop.1_4 - start.2_5;
+  _7 = (double) _6;
+  _8 = _7 / 1.0e+6;
+  duration = _8;
+  printf ("\xe7\xa8\x8b\xe5\xba\x8f\xe8\xbf\x90\xe8\xa1\x8c\xe6\x97\xb6\xe9\x97\xb4\xe4\xb8\xba\xef\xbc\x9a");
+  duration.3_9 = duration;
+  printf ("%f\n", duration.3_9);
+  D.2487 = 0;
+  goto <D.2489>;
+  <D.2489>:
+  n = {CLOBBER};
+  goto <D.2488>;
+  D.2487 = 0;
+  goto <D.2488>;
+  <D.2488>:
+  return D.2487;
+}
+
+

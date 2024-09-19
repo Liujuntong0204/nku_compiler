@@ -1,0 +1,49 @@
+
+;; Function main (null)
+;; enabled by -tree-original
+
+
+{
+  int a;
+  int b;
+  int i;
+  int t;
+  int n;
+  int c = 2000;
+
+  start = clock ();
+  printf ((const char * restrict) "%s\n", (char *) "\xe8\xbf\x99\xe6\x98\xaf\xe4\xb8\x80\xe4\xb8\xaa\xe5\xae\x8f\xe5\xae\x9a\xe4\xb9\x89\xef\xbd\x9e");
+    int a;
+    int b;
+    int i;
+    int t;
+    int n;
+  a = 0;
+  b = 1;
+  i = 1;
+    int c = 2000;
+  scanf ((const char * restrict) "%d", &n);
+  printf ((const char * restrict) "%d\n", a);
+  printf ((const char * restrict) "%d\n", b);
+  goto <D.2482>;
+  <D.2483>:;
+  t = b;
+  b = a + b;
+  printf ((const char * restrict) "%d\n", b);
+  a = t;
+  i = i + 1;
+  <D.2482>:;
+  if (i < n) goto <D.2483>; else goto <D.2481>;
+  <D.2481>:;
+  if (0)
+    {
+      printf ((const char * restrict) "%s\n", (char *) "\xe8\xbf\x99\xe4\xb8\x8d\xe5\xaf\xb9\xe5\x90\xa7\xef\xbc\x9f");
+    }
+  stop = clock ();
+  duration = (double) (stop - start) / 1.0e+6;
+  printf ((const char * restrict) "\xe7\xa8\x8b\xe5\xba\x8f\xe8\xbf\x90\xe8\xa1\x8c\xe6\x97\xb6\xe9\x97\xb4\xe4\xb8\xba\xef\xbc\x9a");
+  printf ((const char * restrict) "%f\n", duration);
+  return 0;
+}
+return 0;
+

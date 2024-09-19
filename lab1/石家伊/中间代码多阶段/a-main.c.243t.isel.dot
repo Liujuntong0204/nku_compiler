@@ -1,0 +1,82 @@
+digraph "a-main.c.243t.isel" {
+overlap=false;
+subgraph "cluster_main" {
+	style="dashed";
+	color="black";
+	label="main ()";
+	subgraph cluster_0_1 {
+	style="filled";
+	color="darkgreen";
+	fillcolor="grey88";
+	label="loop 1";
+	labeljust=l;
+	penwidth=2;
+	fn_0_basic_block_4 [shape=record,style=filled,fillcolor=lightgrey,label="{\<bb\ 4\>:\l\
+|#\ a_10\ =\ PHI\ \<a_18(2),\ a_35(3)\>\l\
+|#\ b_11\ =\ PHI\ \<b_19(2),\ b_33(3)\>\l\
+|#\ i_12\ =\ PHI\ \<i_20(2),\ i_36(3)\>\l\
+|n.0_2\ =\ n;\l\
+|if\ (i_12\ \<\ n.0_2)\l\
+\ \ goto\ \<bb\ 3\>;\ [INV]\l\
+else\l\
+\ \ goto\ \<bb\ 5\>;\ [INV]\l\
+}"];
+
+	fn_0_basic_block_3 [shape=record,style=filled,fillcolor=lightgrey,label="{\<bb\ 3\>:\l\
+|t_32\ =\ b_11;\l\
+|b_33\ =\ a_10\ +\ b_11;\l\
+|printf\ (\"%d\\n\",\ b_33);\l\
+|a_35\ =\ t_32;\l\
+|i_36\ =\ i_12\ +\ 1;\l\
+}"];
+
+	}
+	fn_0_basic_block_0 [shape=Mdiamond,style=filled,fillcolor=white,label="ENTRY"];
+
+	fn_0_basic_block_1 [shape=Mdiamond,style=filled,fillcolor=white,label="EXIT"];
+
+	fn_0_basic_block_2 [shape=record,style=filled,fillcolor=lightgrey,label="{\<bb\ 2\>:\l\
+|_1\ =\ clock\ ();\l\
+|start\ =\ _1;\l\
+|__builtin_puts\ (\"\\xe8\\xbf\\x99\\xe6\\x98\\xaf\\xe4\\xb8\\x80\\xe4\\xb8\\xaa\\xe5\\xae\\x8f\\xe5\\xae\\x9a\\xe4\\xb9\\x89\\xef\\xbd\\x9e\");\l\
+|a_18\ =\ 0;\l\
+|b_19\ =\ 1;\l\
+|i_20\ =\ 1;\l\
+|c_21\ =\ 2000;\l\
+|scanf\ (\"%d\",\ &n);\l\
+|printf\ (\"%d\\n\",\ a_18);\l\
+|printf\ (\"%d\\n\",\ b_19);\l\
+goto\ \<bb\ 4\>;\ [INV]\l\
+}"];
+
+	fn_0_basic_block_5 [shape=record,style=filled,fillcolor=lightgrey,label="{\<bb\ 5\>:\l\
+|_3\ =\ clock\ ();\l\
+|stop\ =\ _3;\l\
+|stop.1_4\ =\ stop;\l\
+|start.2_5\ =\ start;\l\
+|_6\ =\ stop.1_4\ -\ start.2_5;\l\
+|_7\ =\ (double)\ _6;\l\
+|_8\ =\ _7\ /\ 1.0e+6;\l\
+|duration\ =\ _8;\l\
+|printf\ (\"\\xe7\\xa8\\x8b\\xe5\\xba\\x8f\\xe8\\xbf\\x90\\xe8\\xa1\\x8c\\xe6\\x97\\xb6\\xe9\\x97\\xb4\\xe4\\xb8\\xba\\xef\\xbc\\x9a\");\l\
+|duration.3_9\ =\ duration;\l\
+|printf\ (\"%f\\n\",\ duration.3_9);\l\
+|_30\ =\ 0;\l\
+|n\ =\{v\}\ \{CLOBBER\};\l\
+}"];
+
+	fn_0_basic_block_6 [shape=record,style=filled,fillcolor=lightgrey,label="{\<bb\ 6\>:\l\
+|\<L6\>:\l\
+|return\ _30;\l\
+}"];
+
+	fn_0_basic_block_0:s -> fn_0_basic_block_2:n [style="solid,bold",color=blue,weight=100,constraint=true];
+	fn_0_basic_block_2:s -> fn_0_basic_block_4:n [style="solid,bold",color=blue,weight=100,constraint=true];
+	fn_0_basic_block_3:s -> fn_0_basic_block_4:n [style="dotted,bold",color=blue,weight=10,constraint=false];
+	fn_0_basic_block_4:s -> fn_0_basic_block_3:n [style="solid,bold",color=black,weight=10,constraint=true];
+	fn_0_basic_block_4:s -> fn_0_basic_block_5:n [style="solid,bold",color=black,weight=10,constraint=true];
+	fn_0_basic_block_5:s -> fn_0_basic_block_6:n [style="solid,bold",color=blue,weight=100,constraint=true];
+	fn_0_basic_block_6:s -> fn_0_basic_block_1:n [style="solid,bold",color=black,weight=10,constraint=true];
+	fn_0_basic_block_0:s -> fn_0_basic_block_1:n [style="invis",constraint=true];
+}
+}
